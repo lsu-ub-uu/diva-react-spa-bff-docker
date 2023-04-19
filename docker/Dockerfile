@@ -1,4 +1,4 @@
-FROM cora-nginx:latest as builder
+FROM cora-nginx as builder
 
 ARG BASENAME
 ENV BASENAME=$BASENAME
