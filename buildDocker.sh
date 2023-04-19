@@ -7,6 +7,6 @@ TAG=diva-react-spa-bff
 
 echo Building diva-react-spa-bff with BASENAME $BASENAME and VERSION $VERSION
 
-docker build --no-cache --pull \
+docker build --no-cache --pull=false \
     --build-arg BASENAME=$BASENAME \
     -t $TAG ./docker
