@@ -1,4 +1,4 @@
-FROM cora-docker-tomcat as builder
+FROM cora-nginx:latest
 
 ARG BASENAME
 ENV BASENAME=$BASENAME
