@@ -2,9 +2,9 @@ FROM node:18 as builder
 ARG BASENAME
 ENV BASENAME=$BASENAME
 
-RUN apk add git nodejs npm
+# RUN apk add git nodejs npm
 
-RUN npm install npm@latest -g
+# RUN npm install npm@latest -g
 
 RUN git clone https://github.com/lsu-ub-uu/diva-react-spa-bff.git
 
