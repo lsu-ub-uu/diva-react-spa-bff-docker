@@ -23,3 +23,5 @@ RUN npm run build
 FROM node:18
 
 COPY . .
+
+CMD [ "node", "server.js "]
