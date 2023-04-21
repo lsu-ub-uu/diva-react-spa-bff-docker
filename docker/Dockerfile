@@ -20,6 +20,6 @@ RUN npm install
 
 RUN npm run build
 
-FROM cora-nginx:latest
+FROM node:18
 
-COPY --from=builder /diva-react-spa-bff/dist /usr/share/nginx/html
+COPY /diva-react-spa-bff/dist .
