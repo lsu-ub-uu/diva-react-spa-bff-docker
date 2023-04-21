@@ -22,6 +22,6 @@ RUN npm run build
 
 FROM node:18
 
-COPY . .
+COPY --from=builder /diva-react-spa-bff/dist .
 
-CMD [ "node", "server.js "]
+CMD [ "node", "server.js" ]
