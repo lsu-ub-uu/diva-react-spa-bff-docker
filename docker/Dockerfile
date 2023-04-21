@@ -1,4 +1,4 @@
-FROM alpine:latest as builder
+FROM node:18 as builder
 ARG BASENAME
 ENV BASENAME=$BASENAME
 
@@ -19,8 +19,6 @@ RUN git log --name-status HEAD^..HEAD
 RUN npm install
 
 RUN npm run build
-
-FROM node:18
 
 COPY --from=builder /diva-react-spa-bff/dist .
 
