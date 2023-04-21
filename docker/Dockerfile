@@ -20,6 +20,6 @@ RUN npm install
 
 RUN npm run build
 
-COPY /diva-react-spa-bff/dist .
+COPY /dist .
 
 CMD [ "node", "server.js" ]
