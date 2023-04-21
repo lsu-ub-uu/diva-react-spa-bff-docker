@@ -22,4 +22,4 @@ RUN npm run build
 
 FROM node:18
 
-COPY /diva-react-spa-bff/dist .
+COPY . .
