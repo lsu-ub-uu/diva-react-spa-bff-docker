@@ -20,6 +20,12 @@ RUN npm install
 
 RUN npm run build
 
-COPY /dist .
+RUN ls
+
+WORKDIR dist
+
+RUN ls
+
+COPY . .
 
 CMD [ "node", "server.js" ]
