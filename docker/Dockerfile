@@ -20,11 +20,7 @@ RUN npm install
 
 RUN npm run build
 
-RUN ls
-
 WORKDIR dist
-
-RUN ls
 
 COPY . .
 
