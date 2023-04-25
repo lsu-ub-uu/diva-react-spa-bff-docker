@@ -2,7 +2,7 @@
 
 BASENAME=${1:-'/'}
 VERSION=${2:-'latest'}
-CORA_API_URL=${3:-'CORA_API_URL'}
+CORA_API_URL=${3:-'https://cora.epc.ub.uu.se/diva/rest'}
 
 TAG=diva-react-spa-bff
 
