@@ -1,8 +1,5 @@
 FROM node:18
-ARG BASENAME
-ARG CORA_API_URL
-ENV BASENAME=$BASENAME
-ENV CORA_API_URL=$CORA_API_URL
+ENV CORA_API_URL setWhenDockerStarts
 
 # RUN apk add git nodejs npm
 
