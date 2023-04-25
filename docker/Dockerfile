@@ -1,6 +1,7 @@
 FROM node:18
 ARG BASENAME
 ENV BASENAME=$BASENAME
+ENV CORA_API_URL=$CORA_API_URL
 
 # RUN apk add git nodejs npm
 
