@@ -1,5 +1,4 @@
 FROM node:18
-ENV CORA_API_URL setWhenDockerStarts
 
 # RUN apk add git nodejs npm
 
