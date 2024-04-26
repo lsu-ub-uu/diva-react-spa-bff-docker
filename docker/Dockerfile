@@ -1,8 +1,11 @@
 FROM node:18
 
-COPY /dist /tmp/dist
+COPY serverDependencies/package.json .
 
-WORKDIR /tmp/dist
+RUN npm install
 
-CMD [ "ls -l" ]
-#CMD [ "node", "server.js" ]
+COPY dist/main/webapp/ dist/
+
+WORKDIR dist/
+
+CMD ["node", "server.js"]
