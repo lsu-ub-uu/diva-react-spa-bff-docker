@@ -38,7 +38,7 @@
         <outputDirectory>${project.build.directory}/docker2</outputDirectory>
         <exec-maven-plugin.version>3.1.0</exec-maven-plugin.version>
 
-        <diva-client-bff.version>1.6-SNAPSHOT</diva-client-bff.version>
+        <diva-client-bff.version>1.7-SNAPSHOT</diva-client-bff.version>
     </properties>
 
     <scm>
